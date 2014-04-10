@@ -1,0 +1,39 @@
+﻿빌드 시작: 2014-02-10 오전 5:03:39
+     1>2 노드의 "C:\Users\cjy\Desktop\MFTParser_\MFT_parser\ntfsdir.vcxproj" 프로젝트(Build 대상)입니다.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_attribute.h(160): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(317) : 'wcsncpy' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_attribute.h(788): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(317) : 'wcsncpy' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_attribute.h(904): warning C4244: 'return' : 'const ULONGLONG'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_attribute.h(954): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(317) : 'wcsncpy' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_attribute.h(1101): warning C4996: 'wcsncpy': This function or variable may be unsafe. Consider using wcsncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(317) : 'wcsncpy' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_attribute.h(1111): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(191) : 'strncpy' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\ntfslib\ntfs_filerecord.h(899): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(349) : '_snprintf' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(27): warning C4305: '-=' : 'unsigned __int64'에서 'unsigned int'(으)로 잘립니다.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(64): warning C4244: '인수' : 'ULONGLONG'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(64): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 'strcat' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(66): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(115) : 'strcat' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(68): warning C4172: 지역 변수 또는 임시 변수의 주소를 반환하고 있습니다.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(174): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : 'scanf' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(200): warning C4244: '인수' : 'ULONGLONG'에서 'size_t'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(314): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(110) : 'strcpy' 선언을 참조하십시오.
+     1>c:\users\cjy\desktop\mftparser_\mft_parser\main.cpp(70): warning C4715: 'getFullPath' : 모든 제어 경로에서 값을 반환하지는 않습니다.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\ntfsdir.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\ntfsdir.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\ntfsdir.lib" /MACHINE:X86 /SAFESEH .\Debug\main.obj
+         ntfsdir.vcxproj -> C:\Users\cjy\Desktop\MFTParser_\MFT_parser\.\Debug\ntfsdir.exe
+     1>"C:\Users\cjy\Desktop\MFTParser_\MFT_parser\ntfsdir.vcxproj" 프로젝트를 빌드했습니다(Build 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:03.03

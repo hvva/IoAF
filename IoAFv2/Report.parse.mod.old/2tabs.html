@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko" class=" modern js flexbox rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent"><!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>IOAF</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="./tabs.css">
+<link rel="stylesheet" href="./events.css">
+<link rel="stylesheet" href="./graphics.css">
+<script src="./Tab Menu Animation Design_files/modernizr.min.js"></script>
+<script src="./Tab Menu Animation Design_files/jquery.min.js"></script>
+<script src="./Tab Menu Animation Design_files/jquery.tabs.js"></script>
+<script src="./Tab Menu Animation Design_files/tab_design.js"></script>
+
+<script src="./timeline_ajax/simile-ajax-api.js" type="text/javascript"></script>
+<script src="http://simile.mit.edu/timeline/api/timeline-api.js" type="text/javascript"></script>
+<!--script src="http://simile.mit.edu/timeline/api/simile-ajax-api.js" type="text/javascript"></script!-->
+<script src="./cubism.js"></script>
+<!--script src="timeline_js/timeline-api.js?bundle=true" type="text/javascript"></script!-->
+<!--script src="./Tab Menu Animation Design_files/band.js"></script!-->
+<!--script src="http://simile.mit.edu/timeline/api/scripts/sources.js"></script!-->
+
+<!--script src="./Tab Menu Animation Design_files/simile-ajax-api.js?bundle=true" type="text/javascript"></script!-->
+<!--script src="./Tab Menu Animation Design_files/timeline-api.js?bundle=true" type="text/javascript"></script!-->
+
+<!--script src="./Tab Menu Animation Design_files/local_data.js" type="text/javascript"></script!-->
+	<script>
+	var tl;
+function onLoad() {
+  var eventSource = new Timeline.DefaultEventSource();
+  var bandInfos = [
+    Timeline.createBandInfo({
+    	eventSource:    eventSource,
+        date:           "1963",
+        width:          "70%", 
+        intervalUnit:   Timeline.DateTime.MONTH, 
+        intervalPixels: 100
+    }),
+    Timeline.createBandInfo({
+    	eventSource:    eventSource,
+        date:           "1963",
+        width:          "30%", 
+        intervalUnit:   Timeline.DateTime.YEAR, 
+        intervalPixels: 200
+    })
+  ];
+  bandInfos[1].syncWith = 0;
+  bandInfos[1].highlight = true;
+  tl = Timeline.create(document.getElementById("my-timeline"), bandInfos);
+  //console.log(cubismData);
+  eventSource.loadJSON(cubismData, "./cubism.js");
+
+  // tl.loadJSON("./cubism.js", function(json, url) {
+  //   // 
+  // });
+}
+
+	</script>
+</head>
+ 
+<!-- <body onload="onLoad();" onresize="onResize();"> -->
+<body onload="onLoad();">
+
+<div id="page-wrap">
+	
+	<h1>IOAF Report <span>Indicator Of Anti-Forensics</span></h1>
+	<div id="tab_design" class="tabs">
+		<nav class="tab_menu clearfix">
+			<ul id='1'>
+				<li>
+					<a href="#About">
+						<img src="./Tab Menu Animation Design_files/clock-icon.png" alt="">About
+					</a>
+				</li>
+				<li>
+					<a href="#Description">
+						<img src="./Tab Menu Animation Design_files/clock-icon.png" alt="">Description
+					</a>
+				</li>
+				<li>
+					<a href="#Detection_Info">
+						<img src="./Tab Menu Animation Design_files/clock-icon.png" alt="">Detection_Info
+					</a>
+				</li>
+			</ul>
+		</nav><!-- e: .tab_menu -->
+		<div class="tab_contents" id="1">
+			<ul id='1'>
+				<li id="About">
+					<img src="./Tab Menu Animation Design_files/Untiatled-4.jpg" alt="" width="128" height="128">
+					<h3>Tool_name</h3>
+					<p>Ccleaner version:4.3.2.43</p>
+				</li>
+				<li id="Description">
+					<img src="./Tab Menu Animation Design_files/weather.png" alt="" width="128" height="128">
+					<h3>Description</h3>
+					<p>Data_Wired,Steganography,anything has been erased...</p>
+				</li>
+				<li id="Detection_Info">
+					<img src="./Tab Menu Animation Design_files/weather.png" alt="" width="128" height="128">
+					<h3>Detection_Info</h3>
+					<p>2014-01-03-12:36:48GMT+9[Installed] 2014-01-03-13:01:23GMT+9[Run]</p>
+				</li>
+			</ul>
+		</div><!-- e: .tab_contents -->
+
+
+		<nav class="tab_menu clearfix">
+			<ul id='2'>
+				<li>
+					<a href="#About1">
+						<img src="./Tab Menu Animation Design_files/clock-icon.png" alt="">All
+					</a>
+				</li>
+				<li>
+					<a href="#Description1">
+						<img src="./Tab Menu Animation Design_files/clock-icon.png" alt="">System_logs
+					</a>
+				</li>
+				<li>
+					<a href="#Description2">
+						<img src="./Tab Menu Animation Design_files/clock-icon.png" alt="">User_History
+					</a>
+				</li>
+			</ul>
+		</nav><!-- e: .tab_menu -->
+		<div class="tab_contents" id="2">
+			<div id="my-timeline" style="height: 150px; border: 1px solid #aaa"></div>
+			<ul id='2'>
+				<!--li id="About1">
+					<img src="./Tab Menu Animation Design_files/Untitled-4.jpg" alt="" width="128" height="128">
+					<h3>All</h3>
+					<p>Know yourself</p>
+				</li>
+				<li id="Description1">
+					<img src="./Tab Menu Animation Design_files/weather.png" alt="" width="128" height="128">
+					<h3>System_logs</h3>
+					<p>Always keep the faith</p>
+				</li>
+				<li id="Description2">
+					<img src="./Tab Menu Animation Design_files/weather.png" alt="" width="128" height="128">
+					<h3>User_History</h3>
+					<p>User_History</p>
+				</li!-->
+			</ul>
+		</div><!-- e: .tab_contents -->
+	</div><!-- e: #tab_design -->
+</div>
+</body>
+<!--body onload="onLoad();" onresize="onResize();"!-->
+	<!--div id="my-timeline" style="height: 150px; border: 1px solid #aaa"></div!-->
+<!--/body!-->
+</html>
