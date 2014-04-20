@@ -8,4 +8,9 @@ name : park
 id : nasa789
 email : nasa789@gmail.com
 ------- member 2 end ------------
+------ member 3 start ------------
+name : goni kim
+id : gonikim32
+email : gonikim32@naver.com
+------ member 3 end -------------
 
