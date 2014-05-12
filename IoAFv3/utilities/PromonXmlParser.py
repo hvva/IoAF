@@ -137,5 +137,5 @@ if __name__  == '__main__':
 	
 	except:
 		print "Error"	
-
-
+		print "Usage: python "+ os.path.basename(__file__) +" file.xml"
+		print "\t*File.xml should use the same xml structure as procmon."
