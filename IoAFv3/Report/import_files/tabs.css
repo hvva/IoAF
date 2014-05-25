@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+/* tabs.css - 탭 스타일 문서, 2012 © yamoo9.com
+---------------------------------------------------------------- */
+/* ///////////////////////////////////////// 
+	=.tab_menu
+///////////////////////////////////////// */
+.tabs .tab_menu li {
+  position: relative;
+  float: left;
+  margin-right: 2px;
+}
+.ie6 .tabs .tab_menu li {
+	display: inline;
+}
+.tabs .tab_menu li a {
+  display: block;
+  padding: 0.5em 1.5em;
+  background: #e5e9ea;
+  color: #607291;
+  font-size: 17px;
+  -webkit-border-radius: 7px 7px 0 0;
+  -khtml-border-radius: 7px 7px 0 0;
+  -moz-border-radius: 7px 7px 0 0;
+  border-radius: 7px 7px 0 0;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tabs .tab_menu li:hover a, .tabs .tab_menu li a:focus, .tabs .tab_menu li.active a {
+  padding-left: 2.2em;
+  padding-right: 0.8em;
+  background: #f9f9f9;
+  -webkit-box-shadow: 1px -1px 2px #5c5c5c;
+  -moz-box-shadow: 1px -1px 2px #5c5c5c;
+  box-shadow: 1px -1px 2px #5c5c5c;
+}
+.tabs .tab_menu li img {
+  opacity: 0;
+  position: absolute;
+  top: 7px;
+  left: 16px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.tabs .tab_menu li:hover img, .tabs .tab_menu li.active img {
+  opacity: 1;
+  left: 6px;
+}
+
+/* ///////////////////////////////////////// 
+	=.tab_contents
+///////////////////////////////////////// */
+.tabs .tab_contents {
+  position: relative;
+  min-height: 244px;
+  padding: 2em;
+  color: #0A0A0A;
+  background: #f9f9f9;
+  -webkit-box-shadow: 2px 2px 2px #5c5c5c;
+  -moz-box-shadow: 2px 2px 2px #5c5c5c;
+  box-shadow: 2px 2px 2px #5c5c5c;
+}
+.ie6 .tabs .tab_contents {
+	height: 144px;
+}
+.tabs .tab_contents li {
+  min-height: 244px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ededed;
+  background: #f9f9f9;
+}
+.js .tabs .tab_contents li {
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  width: 95%;
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.js .tabs .tab_contents li.active {
+  z-index: 10;
+}
+.tabs .tab_contents img {
+  float: left;
+  margin-right: 10px;
+}
+
+
+
