@@ -30,11 +30,15 @@ use by investigators in the field. A code rewrite was done in C++. Parsing 'modu
 were introduced, of which MFT and Registry parsing was completed. The reporting interface 
 was also improved, written in HTML/JS.
 
+IoAFv3 - Version three worked towards expanding the functionality of IoAF to
+include automatic event reconstruction and timelines of anti-forenisc activtiy.
 
 ## Contributors
 IoAFv1: Kyoung Jea Park, Jung-Min Park, Eunjin Kim, Chang Geun Cheon
 
 IoAFv2: Moon Seong Kim, JaeYoung Choi, Sang Seob Lee, Eunjin Kim
+
+IoAFv3: 김고은, Cheon Chang Geun, Hwahn Il Lyoo, Hyeon Gyu Jang,  박경재, 김형석
 
 ## Related Publications
 * James, J. I., Gladyshev, P., & Zhu, Y. (2011). Signature Based Detection of User 
