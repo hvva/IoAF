@@ -12,8 +12,8 @@ Signatures are created by using either real-time or snapshot based
 analysis on a similar system. Objects that are consistently updated 
 by the action of interest are extracted, and further tested (e.g. 
 how the object is updated). If the object is found to consistently 
-correspond to the action of interest - and only the action of interest 
-- it is included as a trace in the signature.
+correspond to the action of interest - and only the action of interest - it
+ is included as a trace in the signature.
 
 The purpose of the project so far is not to automatically reconstruct 
 activities, but to quickly detect the presence of anti-forensic traces 
